@@ -1,5 +1,5 @@
 module Library where
 import PdePreludat
 
-doble :: Number -> Number
-doble numero = numero + numero
+esMultiploDe3 :: Number -> Bool
+esMultiploDe3 numero = (numero % 3 == 0)
