@@ -4,5 +4,5 @@ import PdePreludat
 doble :: Number -> Number
 doble numero = numero + numero
 
-triple :: Number -> Number 
-triple = (*3)
+positivo :: Number -> Bool
+positivo = (>=0)
