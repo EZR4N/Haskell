@@ -5,7 +5,11 @@ import Test.Hspec
 
 correrTests :: IO ()
 correrTests = hspec $ do
-  describe "Test de ejemplo" $ do
-    it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2
+  describe "esBisiesto" $ do
+    it "Calculamos el si el año es bisiesto" $ do
+      esBisiesto 400 `shouldBe` True
+      esBisiesto 100 `shouldBe` False
+      esBisiesto 4 `shouldBe` True
+      esBisiesto (-3) `shouldBe` False
+      esBisiesto (-8) `shouldBe` True 
 
