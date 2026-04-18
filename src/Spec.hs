@@ -5,7 +5,9 @@ import Test.Hspec
 
 correrTests :: IO ()
 correrTests = hspec $ do
-  describe "Test de ejemplo" $ do
+  describe "Testear inversios neg" $ do
     it "El pdepreludat se instaló correctamente" $ do
-      doble 1 `shouldBe` 2
+      inversaRaizCuadrada 1 `shouldBe` 1
+      inversaRaizCuadrada 9 `shouldBe` 1/3
+
 
