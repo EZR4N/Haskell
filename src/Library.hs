@@ -5,7 +5,7 @@ doble :: Number -> Number
 doble numero = numero + numero
 
 promedios :: [[Number]] -> [Number]
-promedios = map sacarPromedio
+promedios = map (sacarPromedio . filter (>4))
 
 sacarPromedio :: [Number] -> Number
 sacarPromedio [] = 0
